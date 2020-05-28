@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/order.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/order.js"></script>
+    </head>
+
+    <body>
+        <div id="search">
+            <ul>
+                <li id="find1" class="current ">院系查询</li>
+                <li id="find2" >教师姓名</li>
+                <li id="find3">时间查询</li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="sel">
+                <form>
+                    <div id="dp" class="show">
+                        <span>所属院系：
+                            <select name="院系" id="dept">
+                                <option value="all">全部</option>
+                                <option value="计科">计科</option>
+                                <option value="经管">经管</option>
+                                <option value="海洋学院">海洋学院</option>
+                                <option value="自动化">自动化</option>
+                                <option value="船舶学院">船舶学院</option>
+                                <option value="语言学院">语言学院</option>
+                            </select>
+                        </span>
+                        <span>教师职称:
+                            <select name="职称" id="profession">
+                                <option value="all">全部</option>
+                                <option value="教授">教授</option>
+                                <option value="副教授">副教授</option>
+                                <option value="院长">院长</option>
+                                <option value="导员">导员</option>
+                            </select>
+                        </span>
+                        <br /><br />
+                        <button type="button" id="btn1">搜索</button>
+                    </div>
+                    <div id="detail">
+                        <input type="text" name="" id="name" placeholder="输入职工号或教师姓名">
+                        <button type="button" id="btn2">搜索</button>
+                    </div>
+                    <div id="time">
+                        <span>DAY:
+                            <select name="day" id="day">
+                                <option value="1">Mon</option>
+                                <option value="2">Tue</option>
+                                <option value="3">Wed</option>
+                                <option value="4">Thur</option>
+                                <option value="5">Fri</option>
+                            </select>
+                        </span>
+                        <span>TIME:
+                            <select name="hour" id="hour">
+                                <option value="T1">8:00-9:00</option>
+                                <option value="T2">9:00-10:00</option>
+                                <option value="T3">10:00-11:00</option>
+                                <option value="T4">14:00-15:00</option>
+                                <option value="T5">15:00-16:00</option>
+                                <option value="T6">16:00-17:00</option>
+                            </select>
+                        </span>
+                        <br /><br />
+                        <button type="button" id="btn3">搜索</button>
+                    </div>
+                </form>
+            </div>
+            <div id="list">
+                <span id="err"></span>
+                <table>
+                    <tr id="fir">
+                        <th>学工号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>院系</th>
+                        <th>职称</th>
+                        <th>联系方式</th>
+                        <th>办公室</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </body>
+
+</html>

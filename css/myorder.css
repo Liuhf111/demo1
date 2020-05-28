@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+    font-family: 楷体;
+    background-color: #fff;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 800px;
+    background-color: #ddd;
+}
+#menu ul {
+    width: 100%;
+}
+#menu li {
+    list-style-type: none;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+}
+
+#menu ul .current {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+#main {
+    width: 90%;
+    margin-left: 160px;
+}
+
+table{
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+    line-height: 1.5em;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    width:90%;
+    margin-left: 10px;
+    border-collapse:collapse;
+}
+
+td, th {
+    font-size:1em;
+    border:1px solid #555;
+    padding:3px 7px 2px 7px;
+}
+
+th {
+    font-size:1.1em;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color:#ccc;
+    color:rgb(73, 73, 25);
+}
+.mask{
+    background-color:rgba(0,0,0,0.2); 
+    width:100%; 
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+.prompt_box
+{
+    width:450px;
+    height:250px;
+    background:#ffffff;
+    border-radius:6px;
+    position:fixed;
+    top:25%; 
+    left:50%; 
+    margin-left:-200px;
+    overflow: hidden;
+}
+.prompt_box .prompt_title
+{
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    border-bottom:2px solid #1a9ebf;
+    background:#e6e6e6;
+}
+.prompt_box .prompt_title h3
+{
+    font-size:16px;
+    color: #333333; 
+    margin-top:0;
+}
+ 
+.prompt_box .prompt_cont
+{
+    position: relative;
+    height:208px;
+}
+.prompt_box .prompt_cont #detail
+{
+    padding: 30px 50px 0;
+    line-height:20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.prompt_box .prompt_cont #prompt_close
+{
+    position: absolute;
+    right:200px;
+    bottom:20px;
+    width:50px;
+    height: 26px;
+    background:#1a9ebf;
+    border-radius:5px;
+    color:#ffffff;
+    font-size: 14px;
+    line-height:26px;
+    text-align: center;
+}
+#detail label {
+    display: block;
+    width: 70px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    float: left;
+}
+
+#detail span {
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+    float: left;
+}
+.hide
+{
+    display:none;
+}
+.show
+{
+    display:block;
+}
